@@ -1,0 +1,20 @@
+N = int(input("Amount of primes you want: "),)
+listofprimes = []
+
+import random
+for m in range(0,N):
+    if m<N-1:
+        k = random.randint(-1500,1500)
+        if k>1:
+            for j in range(2,k,1):
+                if k%j == 0:    
+                    break
+                else:
+                    listofprimes.append(k)
+        
+print(listofprimes)
+
+#----Result-------
+
+Amount of primes you want: 4
+[767, 767, 767, 767, 767, 767, 767, 767, 767, 767, 767]
